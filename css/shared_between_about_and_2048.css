@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+main table tr td figure img
+{
+    width: 90%;
+}
+
+main table tr td
+{
+    width: 50%;
+    text-align: center;
+}
+
+main table tr:nth-of-type(odd)
+{
+    background-color: lightgray;
+}
+
+main table tr:nth-of-type(even)
+{
+    background-color: #1F2937;
+    color: white;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+main table tr td article p
+{
+    padding: 20px;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+main table tr:last-of-type td article ul li p:not(.valuesno)
+,main table tr:nth-of-type(5) td article ul li p:not(.valuesno)
+{
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+main table tr:last-of-type td article ul,
+main table tr:nth-of-type(5) td article ul
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+
+main table tr:last-of-type td article ul li,
+main table tr:nth-of-type(5) td article ul li
+{
+    width: 24%;
+    padding: 8px;
+}
+
+main table tr td article h1
+{
+    font-family: "Roboto Light", Arial, sans-serif;
+}
+
+.valuesno
+{
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}

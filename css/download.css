@@ -1,0 +1,14 @@
+
+main figure
+{
+    display: flex;
+    justify-content: center;
+}
+
+main article p
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+}

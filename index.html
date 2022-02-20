@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/shared.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+
+    <title>Our Group, we are group 13</title>
+    <!-- if you open a tab and look at the tab in the browser you will see the name which is written here-->
+
+</head>
+<body class="background">
+<header>
+    <nav>               <!-- this part is for the navbar -->
+        <!-- ul li stands for unlisted list and list item this creates the order and possibility to make a navbar-->
+        <ul class="dropdownmenu">
+            <li>
+                <a class="buttons" href="./index.html">Home</a>
+            </li>
+
+            <li>
+                <!-- this part is for dropdown part in the navbar
+                when you hover over the a tag below the 2 tags below the a will apear-->
+                <a href="./html/2048.html" class="buttons">2048</a>
+
+                <ul id="dropdowntags">
+                    <li>
+                        <a class="buttons" href="./html/2048.html">The game</a>
+                    </li>
+                    <li>
+                        <a class="buttons" href="./html/code.html">The Code</a>
+                    </li>
+                    <li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a class="buttons" href="./html/download.html">Download</a>
+            </li>
+            <li>
+                <a class="buttons" href="./html/about.html">About</a>
+            </li>
+
+        </ul>
+        <ul id="currentpage">
+            <li>            <!-- This is to show which page your on now atm-->
+                <a class="buttons" id="currentpagea" href="./html/about.html">You are on: <br>Group 13</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+<main>
+     <h1 class="title">Group 13: Our Project</h1>
+    <!-- article is a semantic tag used for tags like IMG and p tags to use the appropriate box instead of using div-->
+    <article class="grouppicturecontent">
+        <figure class="grouppcturecontent">
+             <img src="./pictures/pictures2048/photogroup.png" alt="groupicture">
+        </figure>
+        <p>We are group 13. Members are Paul Christian Mocanu, Faisal Ibadina, Maxime de Rolland-Dalon, Elliot Hermans :)</p>
+        <p>You might have seen other versions of 2048 on the internet and got tired of seeing the same default colours and layout. With this in mind, we removed everything unnecessary to the game and focused on the functionality. This gives the game a nostalgic vibe to the very first game released by Italian web developer Gabriele Cirulli. So instead of looking for the next clone of 2048, why not try our version. Come and gain the experience that the very first players had when being introduced to 2048!</p>
+    </article>
+    <!-- Table is used to make the lay out on every page i make a row useing tr and a make 2
+    columns in every row using colspan this enables me to use the 2 grid lay out on our page-->
+
+    <table>
+        <tr>
+            <td colspan="1">
+                <article>
+                    <p>We have recreated the game 2048! We have been trying to make a game with a fun user experience in a different package.</p>
+                </article>
+           </td>
+            <td colspan="1">
+                <figure>
+                    <img src="./pictures/pictures2048/gamelooks.png" alt="groupicture">
+                </figure>
+            </td>
+        </tr>
+    </table>
+
+    <!-- video control is used that you can pause and and change the play speed and other stuff
+    just go on the website and you will see the controls on the video when you hover over it
+    the video tag is used as an semantic element like figure and article-->
+    <video controls>
+        <--! source is used to link the video from the file to the website so you can show it to the public-->
+        <source src="media/gameplayin4k.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</main>
+<footer>
+    <p>@ 2021 copyright <br>     <!-- br is used to make an enter in text other whise it would al stick behind eachother  -->
+        By ACS Group 13</p>
+</footer>
+
+</body>
+</html>

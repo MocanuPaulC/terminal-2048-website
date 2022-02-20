@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/shared.css" rel="stylesheet">
+    <link href="../css/shared_between_about_and_2048.css" rel="stylesheet">
+    <title>KdG ACS Group 13: The Code</title>
+</head>
+<body class="background">
+<header>
+    <nav>
+        <ul class="dropdownmenu">
+            <li>
+                <a class="buttons" href="../index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="../html/2048.html" class="buttons">2048</a>
+
+                <ul id="dropdowntags">
+                    <li>
+                        <a class="buttons" href="../html/2048.html">The game</a>
+                    </li>
+                    <li>
+                        <a class="buttons" href="../html/code.html">The Code</a>
+                    </li>
+                    <li>
+
+                </ul>
+
+            </li>
+            <li>
+                <a class="buttons" href="../html/download.html">Download</a>
+            </li>
+            <li>
+                <a class="buttons" href="../html/about.html">About</a>
+            </li>
+
+        </ul>
+        <ul id="currentpage">
+            <li>
+                <a class="buttons" id="currentpagea" href="../html/code.html">You are on: <br>The Code</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+    <h1 class="title">The code</h1>
+    <table>
+        <tr>
+            <td colspan="2">
+                <article>
+                    <p>
+                        Zoom in on the pictures to see code really clearly!
+                    </p>
+                </article>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <article>
+                    <p>
+                        While this method is self-explanatory, its developments had a lot of problems we had to fix and
+                        refactor.
+                        It went from a simple method that counted the number of filled squares to a hard-coded method
+                        that checked adjacent squares for similar values to a dynamic method which checks adjacent
+                        squares while making sure to not go out of bounds.
+                    </p>
+                </article>
+            </td>
+            <td colspan="1">
+                <figure>
+                    <img src="../pictures/codesnippets/fill_squares.png" alt="codesnippet">
+                </figure>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <figure>
+                    <img src="../pictures/codesnippets/check_save_exists.png" alt="codesnippet">
+                </figure>
+            </td>
+            <td colspan="1">
+
+                <article>
+                    <p>A simple function with a very high value in our game as the user might be the feared “stupid
+                        user” and as such we are checking for him and making sure he doesn’t brake the game.
+                        This method is utilising a very efficient way of returning values as it doesn’t even have to
+                        reach the end of the method to return the desired Boolean.
+                    </p>
+                </article>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="1">
+                <article>
+                    <p>RandomiseSquares() is a method which is detrimental to the functionality of the game as each turn
+                        two of the empty squares will get a random value of 2 or 4.
+                    </p>
+                </article>
+            </td>
+            <td colspan="1">
+                <figure>
+                    <img src="../pictures/codesnippets/randomise_squares.png" alt="codesnippet">
+                </figure>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <figure>
+                    <img src="../pictures/codesnippets/loadgame.png" alt="codesnippet">
+                </figure>
+            </td>
+            <td colspan="1">
+
+                <article>
+                    <p>As some of us remember the good ol’ days of saveless games, the frustration was hard when you had to finish a game in one siting. Thus, we decided to show the load game method which calls on the database to give us the state of a game which has been saved previously. </p>
+                </article>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1">
+                <article>
+                    <p>The result set provided by the previous method is used in this simple method which initializes a board from the ground up to the same state as the requested saved game.
+                        It implements a highly efficient manner of extracting the values from the result set by combining the functionality of a while loop and a for loop. At the end, the method returns the array of squares which will be utilised by the screen class to display it accordingly.
+                    </p>
+                </article>
+            </td>
+            <td colspan="1">
+                <figure>
+                    <img src="../pictures/codesnippets/initliase_squares.png" alt="codesnippet">
+                </figure>
+
+            </td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <p>@ 2021 copyright <br>
+        By ACS Group 13</p>
+</footer>
+</body>
+</html>
